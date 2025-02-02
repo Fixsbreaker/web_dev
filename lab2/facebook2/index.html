@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
-    <div class="lll">
-        <h1 class="header">facebook</h1>
-        <h3 class="txt">Facebook помогает вам всегда<br>оставаться на связи и общаться со<br>своими знакомыми.</h3>
-    </div>
-    <div class="rrr">
-        <div class="login-container">
-            <form class="login-form">
-                <input type="email" placeholder="Электронный адрес или номер телефона" class="input-field" name="email"><br>
-                <input type="password" placeholder="Пароль" class="input-field" name="pwd"><br>
-                <button class="login-button">Вход</button><br>
-                <a href="#" class="forgot-password">Забыли пароль?</a><br>
-                <p class="line"> </p>
-                <button class="create-account-button">Создать новый аккаунт</button>
-            </form>
+<div class="container flex">
+    <div class="facebook-page flex">
+        <div class="text">
+            <h1>facebook</h1>
+            <p>Facebook помогает вам всегда<br>оставаться на связи и общаться со<br>своими знакомыми.</p>
         </div>
-        <p class="txt2"><a href="#" class="create-page">Создать Страницу</a> знаменитости, музыкальной группы или<br> компании.</p>
+        <form>
+            <input type="email" placeholder="Электронный адрес или номер телефона" name="email">
+            <input type="password" placeholder="Пароль" name="pwd">
+            <div class="link">
+                <button class="login">Вход</button>
+                <a href="#" class="forgot">Забыли пароль?</a>
+            </div>
+            <hr>
+            <div class="button">
+                <a href="#">Создать новый аккаунт</a>
+            </div>
+        </form>
     </div>
 </div>
 <footer>
-    <div id="language-list">
-        <ul>
+    <div class="footer-contents">
+        <ol>
             <li>Русский</li>
             <li><a href="#">English (US)</a></li>
             <li><a href="#">Türkçe</a></li>
@@ -40,11 +41,8 @@
             <li><a href="#">Shqip</a></li>
             <li><a href="#">Español</a></li>
             <li><a href="#">Português (Brasil)</a></li>
-        </ul>
-    </div>
-    <hr class="line2">
-    <div id="footer-links">
-        <ul>
+        </ol>
+        <ol>
             <li><a href="#">Регистрация</a></li>
             <li><a href="#">Вход</a></li>
             <li><a href="#">Messenger</a></li>
@@ -70,9 +68,9 @@
             <li><a href="#">Справка</a></li>
             <li><a href="#">Загрузка контактов и лица, не являющиеся пользователями</a></li>
             <li><a href="#">Настройки</a></li>
-        </ul>
+        </ol>
     </div>
-
+    <small>Facebook © 2025</small>
 </footer>
 </body>
 </html>
