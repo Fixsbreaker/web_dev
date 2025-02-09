@@ -1,0 +1,45 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+p{
+    background-color: rgb(200, 200, 200);
+    font-size: 40px;
+}
+
+#todoList {
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border: 3px solid #b6b6b6;
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.delete-btn {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    padding: 5px 10px;
+}
+#add{
+    background-color: rgba(11, 81, 147, 0.65);
+    border:none;
+    width:50px;
+    height:30px;
+    margin-left: 15px;
+}
+
+#newTask{
+    width:300px;
+    height:25px;
+    margin-left: 20px;
+}
