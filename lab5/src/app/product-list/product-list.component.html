@@ -1,0 +1,7 @@
+<div *ngFor="let product of products">
+    <app-product-item
+      [product]="product"
+      (remove)="onRemoveProduct(product.id)">
+    </app-product-item>
+  </div>
+  
