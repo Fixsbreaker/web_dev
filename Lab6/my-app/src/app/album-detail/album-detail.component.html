@@ -1,0 +1,21 @@
+<h4>
+    <a [routerLink]="['/albums']" class="back-button">Back</a>
+  </h4>
+  
+  <div class="container">
+    <div class="album-details">
+      <h3>Album Detail #{{ album.id }}</h3>
+      <h4>{{ album.title }}</h4>
+      <h4>User ID: {{ album.userId }}</h4>
+      <a [routerLink]="['/albums', album.id, 'photos']" class="photos-link">Photos</a>
+    </div>
+  
+    <fieldset class="update-form">
+      <legend>Update Album</legend>
+      <label for="title">New Title</label>
+      <input type="text" [(ngModel)]="updatedAlbum.title" id="title" [value]="album.title" placeholder="Update"> <button (click)="updateAlbum()" class="update-button">Update Album</button>
+    </fieldset>
+  </div>
+  
+
+  

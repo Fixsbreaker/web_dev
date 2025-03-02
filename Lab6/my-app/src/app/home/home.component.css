@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+
+}
+
+.home-works-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+}
+
+h1 {
+  font-size: 24px; /* Размер шрифта */
+  text-align: center; /* Выравнивание текста по центру */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+

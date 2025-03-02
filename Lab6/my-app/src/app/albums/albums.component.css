@@ -1,0 +1,139 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  width: 50%;
+  border: none;
+  margin-left: 25%;
+}
+
+input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: #f5f5f5;
+  padding: 14px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+.Add {
+  border: none;
+  outline: none;
+  padding: 14px 30px;
+  background: #40be01;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.Add:hover {
+  background-color: rgb(63, 133, 1);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  font-size: 23px;
+  padding: 20px 20px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(86, 86, 88, 0.251);
+  transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+}
+
+
+ul li::before {
+  content: '';
+  height: 26px;
+  width: 26px;
+  background-size: cover;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -30px;    
+}
+
+ul li a{
+  color: rgb(99, 99, 99);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 25px;
+  margin-bottom: 5%;
+  transition: color 0.2s;
+}
+
+ul li a:hover{
+  color:  #007bff; 
+}
+
+.delete-button{
+  background-color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+  color: red;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  margin-top: -1%;
+}
+.delete-button:hover{
+  background-color: white;
+  font-size: 30.5px;
+
+}
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin-top: 10%;
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border-radius: 50%;
+  background:
+    linear-gradient(0deg ,rgb(0 0 0/50%) 30%,#0000 0 70%,rgb(0 0 0/100%) 0) 50%/8% 100%,
+    linear-gradient(90deg,rgb(0 0 0/25%) 30%,#0000 0 70%,rgb(0 0 0/75% ) 0) 50%/100% 8%;
+  background-repeat: no-repeat;
+  animation: l23 1s infinite steps(12);
+}
+.loader::before,
+.loader::after {
+   content: "";
+   grid-area: 1/1;
+   border-radius: 50%;
+   background: inherit;
+   opacity: 0.915;
+   transform: rotate(30deg);
+}
+.loader::after {
+   opacity: 0.83;
+   transform: rotate(60deg);
+}
+@keyframes l23 {
+  100% {transform: rotate(1turn)}
+}

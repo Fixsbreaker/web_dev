@@ -1,0 +1,10 @@
+<div class="photo-gallery">
+    <h4 style="margin-top: 3%; margin-left: -3%;"><a [routerLink]="['/albums', photos[0].albumId]" class="back-button">Back</a></h4>
+    <ul class="photo-item">
+        <li *ngFor="let photo of photos">
+            <h3>{{photo.id}}</h3>
+            <h4>Title: {{photo.title}}</h4>
+            <img src="{{photo.url}}" alt="photo">
+        </li>
+    </ul>
+</div>
